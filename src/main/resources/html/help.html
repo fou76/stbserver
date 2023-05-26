@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Aide</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  	
+	<h1 class="bd-title text-center" style="font-weight: 300; margin-top: 50px;">Page d'aide</h1>
+	<h3 class="bd-title text-center" style="font-weight: 300; margin-top: 30px;">Les opétaions gérées par notre service REST </h3>
+
+	<div class="accordion" id="accordionExample">
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          1 - Page d'accueil 
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/ </br> 
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> : Affiche la page d’accueil (HTML)
+	      </div>
+	    </div>
+	 </div>
+
+	 <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          2 - Page d'aide 
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/help  </br> 
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> : Affiche la page contenant les informations d'aide. (HTML)
+	      </div>
+	    </div>
+	 </div>
+
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          3 - Liste des STB: Format XML
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/resume/xml  </br> 
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> : Affiche la liste des spécifications stockée. (Flux XML)
+	      </div>
+	    </div>
+	  </div>
+	  
+	  	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          4 - Liste des STB: Format HTML
+	        </button>
+	      </h2>
+	    </div>
+	  
+	  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/resume  </br> 
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> : Affiche la liste des spécifications stockée. (Flux html)
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          5 - Détail d’une Spécification : Format XML
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/xml </br> 
+	        <b> Parametre </b> : id </br>
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> :  Retourne le contenu complet de la spécifications dont l’identifiant est (id)
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          6 - Détail d'une Spécification : Format HTML
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/html  </br> 
+	        <b> Parametre </b> : id </br>
+	        <b> Méthode attendue </b> : GET </br>
+			<b>Résumé de l'opération </b> : Retourne le contenu complet de la spécifications dont l’identifiant est (id)
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          7 - Ajout d’une STB dans la base
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/insert  </br> 
+	        <b> Méthode attendue </b> : POST </br>
+			<b>Résumé de l'opération </b> : Le flux reçu est validé par le schéma XSD de définition STB23 Si le flux est déjà présent c'est à dire si les informations titre et version sont identique alors une indication d’erreur est retournée. Si l’opération réussie, alors la STB est ajouté à la base et sa persistance est assurée La valeur d'identifiant est générée automatiquement, par incrémentation de la derniere valeur enregistré. cette valeur doit obligatoirement etre unique . (Flux XML)
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h2 class="mb-0">
+	        <button class="btn btn-link" type="button" data-toggle="collapse show" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          8 - Suppression d’une STB
+	        </button>
+	      </h2>
+	    </div>
+
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body">
+	        <b> URL </b> : http://stb23server-azizi.cleverapps.io/stb23/delete  </br> 
+	        <b> Parametre </b> : id </br>
+	        <b> Méthode attendue </b> : DELETE </br>
+			<b>Résumé de l'opération </b> : Suppression de la STB dont l’identifiant est id(Flux XML)
+	      </div>
+	    </div>
+	  </div>
+
+	 
+	</div>
+
+
+	<style type="text/css">
+		#accordionExample {
+			margin: 20px;
+		}
+
+		.card-header {
+			padding: 5px;
+		}
+	</style>
+
+
+</body>
+</html>
